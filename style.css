@@ -1,0 +1,31 @@
+.flip-card {
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    transform: rotateY(0deg);
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  .bg-image {
+    background-image: url('Images/Card\ Detail\ Image.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
